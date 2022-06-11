@@ -1,6 +1,5 @@
 import numpy as np
-import MelFilterBank
-import ModificationTool
+from subscript import MelFilterBank, ModificationTool
 import scipy.fftpack.realtransforms
 
 class MFCCclass:
