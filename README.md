@@ -1,10 +1,10 @@
 # MFCC linearSVM TEST
  
-A program that extracts features with MFCC and finds the correct answer rate with linear SVM.
+A program that extracts features with MFCC and finds the accuracy with linear SVM.
  
 # DEMO
  
-The correct answer rate was `73.3%` when the dataset of audio sample was as follows and output to one linear SVM of the machine learning algorithm using the MFCC output by this program.
+The accuracy was `84.5%` when the dataset of audio sample was as follows and output to one linear SVM of the machine learning algorithm using the MFCC output by this program.
 
 * Name:  Jakobovski / Free Spoken Digit Dataset (FSDD)
 * LICENCE: Creative Commons Attribution-ShareAlike 4.0 International
