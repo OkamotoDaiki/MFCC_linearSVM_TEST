@@ -24,11 +24,8 @@ if __name__=="__main__":
         label = fname.split('/')[1].split('_')[0]
         label_list.append(label)
 
+    from sklearn.model_selection import cross_val_score
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        training_list, label_list, random_state=0
-    )
-
-    Linear_svm = LinearSVC().fit(X_train, y_train)
-    score_testset = Linear_svm.score(X_test, y_test)
-    print("Accuracy on test set: {}".format(score_testset))
+    linear_svm = LinearSVC()
+    scores = cross_val_score(linear_svm, training_list, label_list, cv=5)
+    print("Cross-validation scores: {:.3f}".format(scores.mean()))
